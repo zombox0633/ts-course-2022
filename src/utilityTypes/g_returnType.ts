@@ -17,6 +17,6 @@ function get(person: Person, key: keyof Person) {
 
 type Fn = typeof get
 
-
+////เข้าไปใช้กับ function():myGetReturnType{}
 type myGetReturnType = ReturnType<Fn>
 //ReturnType ทำการแสดงชนิดข้อมูลใน function

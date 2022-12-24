@@ -30,5 +30,7 @@ type MyGetParameters<T extends (...args:any) => any > = T extends (
 
 
 
-//
+//เข้าไปใช้กับ function(myGetReturnType){}
 type myGetReturnType = Parameters<Fn>
+
+
