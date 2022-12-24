@@ -38,7 +38,7 @@ type PersonA = typeof person
 type PersonFunctionKeys<T> = {//PersonFunctionKeys<T คือ type parameter T คือ ตัวแปรที่นิยามขึ้นเพื่อใช้แทน
   [k in keyof T]: T[k] extends Function? k : never
   //[k in keyof T]  คือ [k(key) ที่เป็นชื่อตัวแปรใน T(type parameter ,const หรือ  interface ที่นิยามขึ้นเพื่ออ้างถึง)]
-  //T[k] extends Function? k : never  คือ ทำการขอข้อมูลจาก component แม่ ที่เป็น T[k] ชนิดข้อมูลที่เป็น Function? ถ้ามีส่ง k ไม่มีส่ง never
+  //T[k] extends Function? k : never  คือ ทำการดึงข้อมูลจาก ตัวแปร T ที่มี [k] เป็นชนิดข้อมูลที่ k เป็น Function? ถ้ามีส่ง k ไม่มีส่ง never
 }
 
 type PersonFunctionKeysResult = PersonFunctionKeys<PersonA>

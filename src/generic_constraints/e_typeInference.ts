@@ -12,7 +12,7 @@ type Person = string[]
 
 type Unpacked<T> = T extends (infer A)[] ? A : never
 //Unpacked<T> คือ type parameter * T คือ ตัวแปรที่นิยามขึ้นเพื่อใช้แทน
-//T extends คือ ทำการดึงข้อมูลจาก Component แม่ที่เป็น A หรือถ้าตามนี้คือการดึงข้อมูลจากตัวที่ใส่ใน <T ที่กำหนด A>
+//T extends คือ ทำการดึงข้อมูลจาก T ที่ข้อมูลเป็น A หรือถ้าตามนี้คือการดึงข้อมูลจากตัวที่ใส่ใน <T ที่กำหนด A>
 //(infer A)[] ? A :never คือ (infer A) คือน่าจะเอาแค่ A ไม่เอา Array ถ้าเป็นจริงแสดง A ถ้าไม่แสดง never
 
 //นำไปใช้งาน

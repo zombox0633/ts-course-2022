@@ -1,6 +1,5 @@
 //type
 
-import { type } from "os"
 
 //Union type  * หรือ | (OR)
 type product = number|boolean|"code" //กำหนด type product ให้สามารถเก็บข้อมูล number หรือ boolean หรือ "code"
